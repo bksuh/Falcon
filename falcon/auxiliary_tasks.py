@@ -107,7 +107,7 @@ class GuessHumanPosition(nn.Module):
         max_human_num: int = 6,
         position_dim: int = 2,
         loss_scale: float = 0.1,
-        future_step: int = 4,
+        future_step: int = 2, #원래는 4였음.
     ):
         super().__init__()
         self.loss_scale = loss_scale
@@ -254,6 +254,8 @@ class FutureTrajectoryPrediction(nn.Module):
         final_loss = sigmoid_loss * self.loss_scale
 
         return dict(loss=final_loss)
+
+
 
 cs = ConfigStore.instance()
 

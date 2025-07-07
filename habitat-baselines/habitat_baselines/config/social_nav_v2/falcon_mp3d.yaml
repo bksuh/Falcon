@@ -4,7 +4,7 @@ defaults:
   - /benchmark/nav/socialnav_v2: falcon_mp3d_task
   - /habitat_baselines: habitat_baselines_rl_config_base
   - /habitat/simulator/sim_sensors@habitat_baselines.eval.extra_sim_sensors.third_rgb_sensor: third_rgb_sensor 
-  - /habitat_baselines/rl/policy@habitat_baselines.rl.policy.agent_1: single_fixed
+  - /habitat_baselines/rl/policy@habitat_baselines.rl.policy.agent_1: single_fixed #사람 policy
   - /habitat_baselines/rl/policy@habitat_baselines.rl.policy.agent_2: single_fixed
   - /habitat_baselines/rl/policy@habitat_baselines.rl.policy.agent_3: single_fixed
   - /habitat_baselines/rl/policy@habitat_baselines.rl.policy.agent_4: single_fixed
